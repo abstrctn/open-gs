@@ -25,3 +25,7 @@ e.g., `gs://bucket/directory/file.txt` -> https://console.cloud.google.com/stora
 ## Development
 
 `source/main.applescript` contains the source code for the compiled script `gs.app/Contents/Resources/Scripts/main.scpt`. After editing the file in `source`, run `make build` to compile the script into the `.app`.
+
+## Authors
+
+[Michael Strickland](https://twitter.com/moriogawa)
