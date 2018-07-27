@@ -24,4 +24,4 @@ The first time you open a gs:// link, OSX will ask for confirmation. Check the *
 
 ## Development
 
-The `gs.app/Contents/Resources/Scripts/main.scpt` file is compiled, so you will need to open `gs.app` in the AppleScript editor to modify it.
+`source/main.applescript` contains the source code for the compiled script `gs.app/Contents/Resources/Scripts/main.scpt`. After editing the file in `source`, run `make build` to compile the script into the `.app`.
