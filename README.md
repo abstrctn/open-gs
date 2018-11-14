@@ -1,6 +1,6 @@
-This is an OSX application that registers and responds to the `gs://` protocol, letting you open Google Cloud Storage URIs from a browser or command line in the Google Cloud Console.
+This is an OSX application that registers and responds to the `gs://` and `s3://` protocols, letting you open Google Cloud Storage and Amazon S3 URIs from a browser or command line in your web browser.
 
-It wraps the `https://` protocol, opening your default browser to `https://console.cloud.google.com/storage/browser/<ORIGINAL_URI>`.
+It wraps the `https://` protocol, opening your default browser to `https://console.cloud.google.com/storage/browser/<ORIGINAL_URI>` or `https://console.aws.amazon.com/s3/buckets/<ORIGINAL_URI>`.
 
 ## Installation
 
@@ -25,6 +25,11 @@ e.g., `gs://bucket/directory/file.txt` -> https://console.cloud.google.com/stora
 ## Development
 
 `source/main.applescript` contains the source code for the compiled script `gs.app/Contents/Resources/Scripts/main.scpt`. After editing the file in `source`, run `make build` to compile the script into the `.app`.
+
+## Changelog
+
+`v0.2.0` - Added support for `s3://` protocol.
+`v0.1.0` - Initial release with support for `gs://` protocol.
 
 ## Authors
 

@@ -26,6 +26,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>gs</string>
+				<string>s3</string>
 			</array>
 		</dict>
 	</array>
