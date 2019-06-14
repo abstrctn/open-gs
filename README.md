@@ -28,6 +28,7 @@ e.g., `gs://bucket/directory/file.txt` -> https://console.cloud.google.com/stora
 
 ## Changelog
 
+`v0.2.1` - Go to bucket index page by passing no bucket name.
 `v0.2.0` - Added support for `s3://` protocol.
 `v0.1.0` - Initial release with support for `gs://` protocol.
 
