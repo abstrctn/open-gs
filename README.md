@@ -13,6 +13,11 @@ ln -s $(pwd)/gs.app /Applications/gs.app
 
 The first time you open a gs:// link, OSX will ask for confirmation. Check the *Always open these types of links in the associated app* box to prevent the dialog from appearing in the future.
 
+> If you keep getting the "Website wants to open this open this application" prompt, try adding the protocols to Chrome's URLWhitelist setting. (You'll need to restart Chrome.)
+> ```
+> defaults write com.google.Chrome URLWhitelist -array 'gs://*' 's3://*'
+> ```
+
 ## Details
 
 The portion of the URL after `browser/` must match a directory prefix that exists in the bucket, which will show all files within that directory. The path-based filter will only work on directories, you cannot include a file name as part of the page.
